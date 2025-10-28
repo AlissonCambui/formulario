@@ -14,6 +14,13 @@
         <p><strong>Instruções:</strong> Por favor, preencha os campos abaixo com a maior precisão possível. As suas respostas são fundamentais para entendermos o cenário atual e identificarmos oportunidades de melhoria.</p>
 
         <fieldset>
+            <legend>Dados do Entrevistado (RH)</legend>
+            <div class="form-group">
+                <label for="rh_nome_entrevistado">Nome do Entrevistado:</label>
+                <input type="text" id="rh_nome_entrevistado" name="rh_nome_entrevistado">
+            </div>
+        </fieldset>
+        <fieldset>
             <legend>Seção 1: Dados da Empresa</legend>
             <div class="form-group">
                 <label for="rh-q1">Nome da Empresa:</label>
@@ -75,7 +82,7 @@
                 <label>Os processos de recrutamento e seleção são desenhados para serem inclusivos e acessíveis a todas as idades?</label>
                 <div class="radio-group">
                     <label><input type="radio" name="rh_q8" value="sim"> Sim, revisamos constantemente nossas práticas</label>
-                    <label><input type="radio" name="rh_q8" value="tentamos"> Tentamos, mas enfrentamos desafios</label>
+                    <label><input type="radio"name="rh_q8" value="tentamos"> Tentamos, mas enfrentamos desafios</label>
                     <label><input type="radio" name="rh_q8" value="nao"> Não há uma diretriz específica para isso</label>
                 </div>
             </div>
@@ -162,9 +169,4 @@
         </fieldset>
 
         <button type="button" class="submit-button" onclick="gerarPDF('form-rh')">Enviar e Gerar PDF</button>
-        <button type="button" class="clear-button" onclick="clearData('form-rh')">Limpar Formulário</button>
-    </form>
-
-    <script src="script.js"></script>
-</body>
-</html>
+        <button type="button" class="clear
