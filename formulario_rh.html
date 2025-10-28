@@ -20,6 +20,7 @@
                 <input type="text" id="rh_nome_entrevistado" name="rh_nome_entrevistado">
             </div>
         </fieldset>
+
         <fieldset>
             <legend>Seção 1: Dados da Empresa</legend>
             <div class="form-group">
@@ -87,7 +88,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <label>A empresa possui programas específicos para a contratação de profissionais com mais de 50 anos?</label>
+                <label>A empresa possui programas específicos para a contração de profissionais com mais de 50 anos?</label>
                 <div class="radio-group">
                     <label><input type="radio" name="rh_q9" value="sim"> Sim, temos programas ativos</label>
                     <label><input type="radio" name="rh_q9" value="passado"> Já tivemos no passado</label>
@@ -169,4 +170,9 @@
         </fieldset>
 
         <button type="button" class="submit-button" onclick="gerarPDF('form-rh')">Enviar e Gerar PDF</button>
-        <button type="button" class="clear
+        <button type="button" class="clear-button" onclick="clearData('form-rh')">Limpar Formulário</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
